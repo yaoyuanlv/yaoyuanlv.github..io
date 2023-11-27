@@ -98,3 +98,9 @@ background: rgb(255, 255, 255);
       color: #eeeeee;
       }
 
+@font-face {
+  font-family: YuWei;
+  src: url(YuWei.ttf)      
+}
+    
+      
