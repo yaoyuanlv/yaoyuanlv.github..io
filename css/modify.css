@@ -32,9 +32,9 @@ background: rgb(255, 255, 255);
   background: transparent!important;
 }
 /* 头图透明 */
-#page-header::before{
+/* #page-header::before{
   background: transparent!important;
-}
+} */
 /*白天模式伪类遮罩层透明*/
 [data-theme="light"]
   #footer::before{
@@ -100,7 +100,11 @@ background: rgb(255, 255, 255);
 
 @font-face {
   font-family: YuWei;
-  src: url(YuWei.ttf)      
+  src: url(ywjt.ttf)      
 }
-    
-      
+#site-info {
+  font-size: 20px;
+}
+.is-center{
+  font-size: large;
+}   
