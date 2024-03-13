@@ -4,7 +4,7 @@
 }
 /* 首页侧栏卡片 */
 .card-widget{
-background:rgb(255, 255, 255)!important;
+background:rgb(255, 255, 255);
 }
 /* 文章页面正文背景 */
 div#post{
@@ -29,7 +29,7 @@ background: rgb(255, 255, 255);
 
 /* 页脚透明 */
 #footer{
-  background: transparent!important;
+  background: transparent;
 }
 /* 头图透明 */
 /* #page-header::before{
@@ -38,16 +38,16 @@ background: rgb(255, 255, 255);
 /*白天模式伪类遮罩层透明*/
 [data-theme="light"]
   #footer::before{
-      background: transparent!important;
+      background: transparent;
     }
 /*夜间模式伪类遮罩层透明*/
 [data-theme="dark"]
   #footer::before{
-      background: transparent!important;
+      background: transparent;
     }
 [data-theme="dark"]
   #page-header::before{
-    background: transparent!important;
+    background: transparent;
     }
 /*夜间模式页面背景设置为半透明*/
 [data-theme="dark"]
@@ -108,3 +108,4 @@ background: rgb(255, 255, 255);
 .is-center{
   font-size: large;
 }   
+

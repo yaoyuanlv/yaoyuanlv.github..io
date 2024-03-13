@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>遥远的理想乡 | 遥远的理想乡</title><meta name="author" content="遥远"><meta name="copyright" content="遥远"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="爬虫爬取网页数据urllib库urllib库 四大模块 urllib.request   请求模块 urllib.error  异常处理 urllib.parse  URL解析 urllib.robotparser  robots.txt解析模块 使用urllib库爬取网页数据urlopen()方法urlopen(url ,data,timeout)  dat默认为None 为GET请求 设置参数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="遥远的理想乡">
+<meta property="og:url" content="http://example.com/2024/03/13/%E7%88%AC%E8%99%AB/index.html">
+<meta property="og:site_name" content="遥远的理想乡">
+<meta property="og:description" content="爬虫爬取网页数据urllib库urllib库 四大模块 urllib.request   请求模块 urllib.error  异常处理 urllib.parse  URL解析 urllib.robotparser  robots.txt解析模块 使用urllib库爬取网页数据urlopen()方法urlopen(url ,data,timeout)  dat默认为None 为GET请求 设置参数">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avater.png">
+<meta property="article:published_time" content="2024-03-13T07:28:36.799Z">
+<meta property="article:modified_time" content="2024-03-03T14:18:58.630Z">
+<meta property="article:author" content="遥远">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avater.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/03/13/%E7%88%AC%E8%99%AB/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '遥远的理想乡',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-03 22:18:58'
+}</script><link rel="stylesheet" href="APlayer.min.css"></head><body><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/gh/radium-bit/res@master/live2d/autoload.js" async=""></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async=""></script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/music.css"><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="遥远的理想乡" type="application/atom+xml">
+<div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avater.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="遥远的理想乡"><span class="site-name">遥远的理想乡</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-03-13T07:28:36.799Z" title="发表于 2024-03-13 15:28:36">2024-03-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-03T14:18:58.630Z" title="更新于 2024-03-03 22:18:58">2024-03-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h1><h2 id="爬取网页数据"><a href="#爬取网页数据" class="headerlink" title="爬取网页数据"></a>爬取网页数据</h2><h3 id="urllib库"><a href="#urllib库" class="headerlink" title="urllib库"></a>urllib库</h3><p>urllib库 四大模块</p>
+<p>urllib.request   请求模块</p>
+<p>urllib.error  异常处理</p>
+<p>urllib.parse  URL解析</p>
+<p>urllib.robotparser  robots.txt解析模块</p>
+<h3 id="使用urllib库爬取网页数据"><a href="#使用urllib库爬取网页数据" class="headerlink" title="使用urllib库爬取网页数据"></a>使用urllib库爬取网页数据</h3><h5 id="urlopen-方法"><a href="#urlopen-方法" class="headerlink" title="urlopen()方法"></a>urlopen()方法</h5><p>urlopen(url ,data,timeout) </p>
+<p>dat默认为None 为GET请求 设置参数是为POST请求</p>
+<p>timeout 超时时间</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request <span class="keyword">as</span> request</span><br><span class="line">response= request.urlopen(<span class="string">"https://baidu.com"</span>)</span><br><span class="line">html=response.read().decode(<span class="string">"utf-8"</span>)</span><br><span class="line"><span class="built_in">print</span>(html)</span><br></pre></td></tr></tbody></table></figure>
+
+<h5 id="response对象"><a href="#response对象" class="headerlink" title="response对象"></a>response对象</h5><p>geturl()</p>
+<p>info()</p>
+<p>getcode()</p>
+<h5 id="Request对象"><a href="#Request对象" class="headerlink" title="Request对象"></a>Request对象</h5><h3 id="使用Requests库爬取网页数据"><a href="#使用Requests库爬取网页数据" class="headerlink" title="使用Requests库爬取网页数据"></a>使用Requests库爬取网页数据</h3><p>以GET请求的方式爬取百度网页，搜索词为python</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line">headers = {</span><br><span class="line"> <span class="string">'User-Agent'</span>: UserAgent().random</span><br><span class="line"> }</span><br><span class="line">url=<span class="string">"https://www.baidu.com/s"</span></span><br><span class="line">param={<span class="string">"wd"</span>:<span class="string">"python"</span>}</span><br><span class="line">response=requests.get(url,params=param,headers=headers)</span><br><span class="line"><span class="built_in">print</span>(response.text)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'output.html'</span>, <span class="string">'w'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:  <span class="comment"># 将页面内容保存到本地文件</span></span><br><span class="line">    f.write(response.text)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="网页数据解析"><a href="#网页数据解析" class="headerlink" title="网页数据解析"></a>网页数据解析</h2><h3 id="xpath语法"><a href="#xpath语法" class="headerlink" title="xpath语法"></a>xpath语法</h3><p>使用Xpath语法爬取百度热点新闻</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"></span><br><span class="line">tag_url = <span class="string">'https://top.baidu.com/board?tab=realtime'</span></span><br><span class="line"></span><br><span class="line">headers = {</span><br><span class="line">    <span class="string">'User-Agent'</span>: UserAgent().random,</span><br><span class="line">    <span class="string">'Cookie'</span>: </span><br><span class="line">}</span><br><span class="line">response = requests.get(url=tag_url, headers=headers)</span><br><span class="line">page_text = response.text</span><br><span class="line">tree = etree.HTML(page_text)</span><br><span class="line"><span class="comment">#//*[@id="sanRoot"]/main/div[2]/div/div[2]/div[1]/div[2]/a/div[1]/text()</span></span><br><span class="line"><span class="comment">#//*[@id="sanRoot"]/main/div[2]/div/div[2]/div[2]/div[2]/a/div[1]/text()</span></span><br><span class="line"><span class="comment">#//*[@id="sanRoot"]/main/div[2]/div/div[2]/div[1]</span></span><br><span class="line"><span class="comment">#//*[@id="sanRoot"]/main/div[2]/div/div[2]/div[1]/div[1]/div[2]</span></span><br><span class="line"><span class="comment">#//*[@id="sanRoot"]/main/div[2]/div/div[2]/div[2]/div[1]/div[2]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hot_new</span>():</span><br><span class="line">    data_list = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">51</span>):</span><br><span class="line">        data_dict = {}</span><br><span class="line">        title=tree.xpath(<span class="string">'//*[@id="sanRoot"]/main/div[2]/div/div[2]/div['</span>+<span class="built_in">str</span>(i)+<span class="string">']/div[2]/a/div[1]/text()'</span>)[<span class="number">0</span>]</span><br><span class="line">        hot_index=tree.xpath(<span class="string">'//*[@id="sanRoot"]/main/div[2]/div/div[2]/div['</span>+<span class="built_in">str</span>(i)+<span class="string">']/div[1]/div[2]/text()'</span>)[<span class="number">0</span>]</span><br><span class="line">        data_dict[<span class="string">'title'</span>] = title</span><br><span class="line">        data_dict[<span class="string">'hot_index'</span>] = hot_index</span><br><span class="line">        data_list.append(data_dict)</span><br><span class="line">    <span class="keyword">return</span> data_list</span><br><span class="line"><span class="built_in">print</span>(hot_new()[<span class="number">0</span>][<span class="string">"title"</span>])</span><br><span class="line"><span class="comment">#将爬取的数据保存到本地</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'test.csv'</span>,<span class="string">"w"</span>,encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="built_in">len</span>(hot_new())):</span><br><span class="line">        f.write(hot_new()[i][<span class="string">"title"</span>]+<span class="string">"\n"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">遥远</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/03/13/%E7%88%AC%E8%99%AB/">http://example.com/2024/03/13/%E7%88%AC%E8%99%AB/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">遥远的理想乡</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/avater.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/03/13/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avater.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">遥远</div><div class="author-info__description">Are you ready</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB"><span class="toc-number">1.</span> <span class="toc-text">爬虫</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E5%8F%96%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.</span> <span class="toc-text">爬取网页数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#urllib%E5%BA%93"><span class="toc-number">1.1.1.</span> <span class="toc-text">urllib库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8urllib%E5%BA%93%E7%88%AC%E5%8F%96%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.2.</span> <span class="toc-text">使用urllib库爬取网页数据</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#urlopen-%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.2.0.1.</span> <span class="toc-text">urlopen()方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#response%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.1.2.0.2.</span> <span class="toc-text">response对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Request%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.1.2.0.3.</span> <span class="toc-text">Request对象</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Requests%E5%BA%93%E7%88%AC%E5%8F%96%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.3.</span> <span class="toc-text">使用Requests库爬取网页数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90"><span class="toc-number">1.2.</span> <span class="toc-text">网页数据解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#xpath%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.1.</span> <span class="toc-text">xpath语法</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/13/%E7%88%AC%E8%99%AB/" title="无题">无题</a><time datetime="2024-03-13T07:28:36.799Z" title="发表于 2024-03-13 15:28:36">2024-03-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/13/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" title="无题">无题</a><time datetime="2024-03-13T07:28:08.526Z" title="发表于 2024-03-13 15:28:08">2024-03-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/27/python%20web%20Flask%E6%A1%86%E6%9E%B6/" title="Flask框架"><img src="/img/2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Flask框架"></a><div class="content"><a class="title" href="/2023/11/27/python%20web%20Flask%E6%A1%86%E6%9E%B6/" title="Flask框架">Flask框架</a><time datetime="2023-11-27T07:02:55.978Z" title="发表于 2023-11-27 15:02:55">2023-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/27/hello-world/" title="Hello World"><img src="/img/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a><div class="content"><a class="title" href="/2023/11/27/hello-world/" title="Hello World">Hello World</a><time datetime="2023-11-27T06:21:15.364Z" title="发表于 2023-11-27 14:21:15">2023-11-27</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">©2020 - 2024 By 遥远</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
